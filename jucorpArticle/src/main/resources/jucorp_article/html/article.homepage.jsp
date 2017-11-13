@@ -17,7 +17,7 @@
 <%--@elvariable id="renderContext" type="org.jahia.services.render.RenderContext"--%>
 <%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
-<c:set value="${currentNode.properties.picture.node.url}" var="picture1URL" />
+<c:set value="${currentNode.properties.picture.node.thumbnailUrls['w500']}?t=w500" var="picture1URL" />
 
 <div class="col-md-4">
 
