@@ -1,0 +1,59 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jucorp = 'http://www.julian-corporation.com'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+[jmix:juCorpContent] > jmix:droppableContent mixin
+
+[jnt:articleTitle] > jnt:content, jmix:juCorpContent
+ - title (string) mandatory internationalized scoreboost=2.0
+ - picture (weakreference, picker[type='image']) mandatory
+ - link (weakreference, picker[type='page'])
+ - description (string, richtext) internationalized
+ - locution (string) internationalized
+
+[jucorp:article] > jnt:content, jmix:juCorpContent
+ - title (string) mandatory internationalized
+ - date (string) internationalized
+ - description (string, richtext) internationalized
+ - picture (weakreference, picker[type='image']) mandatory
+ - link (weakreference, picker[page])
+
+[jnt:textParagraph] > jnt:content, jmix:juCorpContent
+ - title (string) internationalized
+ - picture (weakreference, picker[type='image'])
+ + childPicture (jnt:fileReference)
+ - pictureDescription (string) internationalized
+ - locution (string) internationalized
+ - description (string, richtext) internationalized
+
+[jnt:doublePicture] > jnt:content, jmix:juCorpContent
+ - picture1 (weakreference, picker[type='image'])
+ - title1 (string) internationalized
+ - picture2 (weakreference, picker[type='image'])
+ - title2 (string) internationalized
+
+[jnt:triplePicture] > jnt:content, jmix:juCorpContent
+ - picture1 (weakreference, picker[type='image'])
+ + childPicture1 (jnt:fileReference)
+ - title1 (string) internationalized
+ - picture2 (weakreference, picker[type='image'])
+ + childPicture2 (jnt:fileReference)
+ - title2 (string) internationalized
+ - picture3 (weakreference, picker[type='image'])
+ + childPicture3 (jnt:fileReference)
+ - title3 (string) internationalized
+ + childPicture4 (jnt:fileReference)
+
+[jnt:juCorpBanner] > jnt:content, jmix:juCorpContent
+ - picture1 (weakreference, picker[type='image'])
+ - title1 (string) internationalized
+
+[jnt:articleList] > jnt:contentList, jmix:juCorpContent, mix:title orderable
+ + * (jucorp:article)
+
+[jnt:news]
+ - title (string)
+ - body (string)
+ - image (weakreference)
+
