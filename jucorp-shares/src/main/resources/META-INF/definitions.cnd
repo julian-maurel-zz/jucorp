@@ -1,0 +1,16 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jucorp = 'http://www.julian-corporation.com'>
+
+[jucorp:shares] > jnt:content, jmix:structuredContent
+  + * (jucorp:shareUser)
+
+  
+[jucorp:shareUser] > jnt:content, jmix:structuredContent
+  - name (string)
+  - coef (long)
+  + * (jucorp:share)
+
+[jucorp:share] > jnt:content, jmix:structuredContent
+  - value (long)
+

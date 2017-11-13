@@ -1,0 +1,40 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+<papamix = 'http://www.361degres.fr/jahia/mix/1.0'>
+<papant = 'http://www.361degres.fr/jahia/nt/1.0'>
+
+
+
+[papamix:361Component] > jmix:droppableContent mixin
+  
+[papamix:conteneur] mixin
+  
+[papamix:contenu] mixin
+
+[papant:multiCols] > jnt:content, papamix:361Component, papamix:conteneur
+  - colNumber (string, choicelist) = '2' < '1', '2', '3', '4'
+  + * (papamix:contenu)
+
+[papant:floatingMenu] > jnt:content, papamix:361Component
+
+
+  
+[papant:presentation] > jnt:content, papamix:361Component
+  - description (string, richtext)
+  - picture (weakreference, picker[type='image']) mandatory < jmix:image
+
+[papant:photo] > jnt:content, papamix:361Component, papamix:contenu, mix:title
+  - picture (weakreference, picker[type='image']) mandatory < jmix:image
+  - HDpreview (boolean)
+  - description (string, richtext) i18n
+  
+  
+[papant:361Section] > jnt:content, papamix:361Component, mix:title
+  - couleur (string, choicelist) = 'dark' < 'dark', 'mousey'
+  + * (papamix:conteneur)
+
+[papant:panorama] > jnt:content, papamix:361Component, papamix:contenu, mix:title
+  - description (string, richtext)
+  - panoFolder (string)
+  - panoPicture (weakreference, picker[type='image'])

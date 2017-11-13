@@ -1,0 +1,27 @@
+package org.jahia.modules.361degresold.rules
+
+// list any import classes here.
+import org.jahia.services.content.rules.*
+import org.jahia.services.content.JCRContentUtils
+import org.slf4j.Logger
+
+expander rules.dsl
+
+// declare any global variables here
+global User user
+global Service service
+global Logger logger
+global JCRContentUtils jcrUtils
+
+rule "Resize fileReference picture image1"
+    salience 25
+    when
+A property j:node has been set on a node
+			- the node has the type jnt:fileReference
+    then
+        Create a thumbnail on reference "w200" of size 200
+        Create a thumbnail on reference "w500" of size 500
+		Create a thumbnail on reference "w1900" of size 850
+		Create a thumbnail on reference "w1900" of size 1900
+        Log "Image updated " + node.getPath()
+end

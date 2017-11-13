@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <_x0033_61degresold j:dependencies="default"
+                          j:modulePriority="0"
+                          j:moduleType="module"
+                          j:title="361degres_old"
+                          jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                          jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-361degresold-1.0-SNAPSHOT">
+                    <src jcr:primaryType="jnt:folder">
+                        <main jcr:primaryType="jnt:folder">
+                            <java jcr:primaryType="jnt:javaPackageFolder">
+                                <org jcr:primaryType="jnt:javaPackageFolder">
+                                    <jahia jcr:primaryType="jnt:folder">
+                                        <modules jcr:primaryType="jnt:javaPackageFolder">
+                                            <degresold jcr:primaryType="jnt:javaPackageFolder">
+                                                <actions jcr:primaryType="jnt:javaPackageFolder">
+                                                    <ImportPictures.java jcr:primaryType="jnt:javaSourceFile"/>
+                                                </actions>
+                                            </degresold>
+                                        </modules>
+                                    </jahia>
+                                </org>
+                            </java>
+                            <resources jcr:primaryType="jnt:folder">
+                                <META-INF jcr:primaryType="jnt:metaInfFolder">
+                                    <spring jcr:primaryType="jnt:folder">
+                                        <_x0033_61degresold.xml jcr:primaryType="jnt:xmlFile"/>
+                                    </spring>
+                                    <definitions.cnd jcr:primaryType="jnt:definitionFile"/>
+                                    <rules.drl jcr:primaryType="jnt:editableFile"/>
+                                </META-INF>
+                                <jnt_fileReference jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <fileReference.renderGallery.jsp jcr:primaryType="jnt:viewFile"/>
+                                        <fileReference.editGallery.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_fileReference>
+                                <jnt_file jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <file.editGallery.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_file>
+                                <jnt_pano jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <pano.previewPano.jsp jcr:primaryType="jnt:viewFile"/>
+                                        <pano.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_pano>
+                                <jnt_navMenu361 jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <navMenu361.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_navMenu361>
+                                <jnt_folder jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <folder.editGallery.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_folder>
+                                <jnt_galerie jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <galerie.jsp jcr:primaryType="jnt:viewFile"/>
+                                        <galerie.pano.jsp jcr:primaryType="jnt:viewFile"/>
+                                        <galerie.categorie.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_galerie>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                </templates>
+                
+            </_x0033_61degresold>
+    </modules>
+</content>

@@ -1,0 +1,31 @@
+.homeLogo {
+	width:300px;
+
+}
+
+#omus-bar {
+    background: #ffffff;
+    margin: 0;
+    padding-top:10px;
+    border: none !important;
+    border-bottom: #7BB06F solid 5px !important;
+    height: 41px;
+    min-height: inherit;
+}
+
+.omnu-menu-item {
+	width:150px;	
+  float:left;
+  border:solid 1px #cccccc;
+  	background-color:#efefef;
+  	margin-left:5px;
+  text-align:center;
+  	padding:5px;
+}
+
+.omnu-menu-item:hover {
+  background-color:#cccccc;
+    border:solid 1px #eeeeee;
+  	font-weight:bold;
+
+}

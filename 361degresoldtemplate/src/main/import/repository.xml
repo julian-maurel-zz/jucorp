@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <_x0033_61degresoldtemplate j:dependencies="361degresold default"
+                                  j:modulePriority="0"
+                                  j:moduleType="templatesSet"
+                                  j:title="361degres_old_template"
+                                  jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                  jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-361degresoldtemplate-1.0-SNAPSHOT">
+                    <src jcr:primaryType="jnt:folder">
+                        <main jcr:primaryType="jnt:folder">
+                            <resources jcr:primaryType="jnt:folder">
+                                <META-INF jcr:primaryType="jnt:metaInfFolder">
+                                    <definitions.cnd jcr:primaryType="jnt:definitionFile"/>
+                                </META-INF>
+                                <jnt_template jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <template.home.jsp jcr:primaryType="jnt:viewFile"/>
+                                        <template.361degresoldtemplate.jsp jcr:primaryType="jnt:viewFile"/>
+                                        <template.internal.pano.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_template>
+                                <css jcr:primaryType="jnt:cssFolder">
+                                    <style.css jcr:primaryType="jnt:cssFile"/>
+                                </css>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <base j:hiddenTemplate="false"
+                  j:view="361degresoldtemplate"
+                  jcr:primaryType="jnt:template">
+                        <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="base"/>
+                        <home j:hiddenTemplate="false"
+                     j:view="home"
+                     jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="home"/>
+                            <menu jcr:primaryType="jnt:contentList">
+                                <navmenu361 jcr:primaryType="jnt:navMenu361"/>
+                            </menu>
+                        </home>
+                        <menu jcr:primaryType="jnt:contentList">
+                            <navmenu361 jcr:primaryType="jnt:navMenu361"/>
+                        </menu>
+                        <galerie j:hiddenTemplate="false"
+                        j:view="361degresoldtemplate"
+                        jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="galerie"/>
+                            <menu jcr:primaryType="jnt:contentList">
+                                <navmenu361 jcr:primaryType="jnt:navMenu361"/>
+                            </menu>
+                        </galerie>
+                        <content j:applyOn="jnt:componentFolder jnt:content jnt:contentFolder jnt:contentFolderReference jnt:contentList"
+                        j:defaultTemplate="false"
+                        j:hiddenTemplate="false"
+                        jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="Content"/>
+                        </content>
+                        <panorama j:applyOn="jnt:pano"
+                         j:defaultTemplate="true"
+                         j:hiddenTemplate="false"
+                         j:view="internal.pano"
+                         jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="Panorama"/>
+                            <pano jcr:primaryType="jnt:contentList">
+                                <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+                            </pano>
+                        </panorama>
+                        <categorie j:hiddenTemplate="false"
+                          j:view="default"
+                          jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="categorie"/>
+                        </categorie>
+                    </base>
+                </templates>
+                
+                <home j:templateName="home" jcr:primaryType="jnt:page">
+                    <j:translation_en jcr:language="en"
+                              jcr:mixinTypes="mix:title"
+                              jcr:primaryType="jnt:translation"
+                              jcr:title="home"/>
+                </home>
+            </_x0033_61degresoldtemplate>
+    </modules>
+</content>

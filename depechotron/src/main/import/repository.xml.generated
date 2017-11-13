@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <depechotron j:dependencies="default"
+                   j:modulePriority="0"
+                   j:moduleType="module"
+                   j:title="depechotron"
+                   jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                   jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-depechotron-1.0-SNAPSHOT">
+                    <src jcr:primaryType="jnt:folder">
+                        <main jcr:primaryType="jnt:folder">
+                            <resources jcr:primaryType="jnt:folder">
+                                <META-INF jcr:primaryType="jnt:metaInfFolder">
+                                    <definitions.cnd jcr:primaryType="jnt:definitionFile"/>
+                                </META-INF>
+                                <jnt_depeche jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <depeche.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_depeche>
+                                <jnt_template jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <template.depeche.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_template>
+                                <css jcr:primaryType="jnt:cssFolder">
+                                    <depeche.css jcr:primaryType="jnt:cssFile"/>
+                                </css>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <content-template j:applyOn="jnt:depeche"
+                              j:defaultTemplate="true"
+                              j:hiddenTemplate="false"
+                              j:view="depeche"
+                              jcr:primaryType="jnt:contentTemplate">
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+                        </pagecontent>
+                    </content-template>
+                </templates>
+                
+            </depechotron>
+    </modules>
+</content>

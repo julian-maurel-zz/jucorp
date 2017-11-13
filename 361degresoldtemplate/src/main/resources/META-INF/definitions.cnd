@@ -1,0 +1,10 @@
+<papamix = 'http://www.361degres.fr/jahia/mix/1.0'>
+
+[papamix:homeShortcuts] mixin
+  extends = jnt:page
+  - animaux (weakreference)
+  - monuments (weakreference)
+  - paysages (weakreference)
+  - pres (weakreference)
+  - villes (weakreference)
+  - panoramas (weakreference)

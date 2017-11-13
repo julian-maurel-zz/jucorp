@@ -1,0 +1,130 @@
+body {
+    background-color: #000000;
+    font-family: Verdana;
+    font-size: 11px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: center;
+	 margin-top : 0px;
+}
+
+a {
+	color:#ffffff;
+	text-decoration:none;
+}
+
+img {
+	border:0px;
+}
+
+.grande_imagette {
+	padding:1px; 
+ 	margin:2px;
+	border:solid 1px #5d5650;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+
+.grande_imagette {
+	opacity:1;
+  	height: 149px;
+	filter:alpha(opacity=100);
+}
+
+.pages a:visited {
+	color:#ffaeae;
+}
+
+.spacer {
+  clear: both;
+}
+
+.conteneur {
+	margin:auto;
+}
+
+.image {
+	float:left;
+	margin-top:10px;
+	margin-left:35px;
+	text-align:center;
+}
+
+.fleche_gauche {
+	width:21px;
+	margin-top:120px;
+	height:146px;
+	float:left;
+}
+
+.image_hd {
+	visibility:hidden; 
+	position:absolute;
+	width:99%;
+	height:99%;
+	margin-top:1px;
+	z-index:99;
+	background-color:#000000;
+	text-align:center;
+}
+
+.grandes_vignettes_conteneur{
+	margin:auto;
+	background-color:#000000;
+	text-align:center;
+}
+
+.titre_categorie {
+	background-image: url('../images/fleche_bas.jpg');
+	text-align:left;
+	background-repeat:no-repeat;
+	text-align:left;
+	margin-top:-1px;
+	margin-bottom:3px;
+	background-position: 0px 4px;
+	height:20px;
+	color:#1872a0;
+	font-weight:bold;
+	width:120px;
+	padding-left:15px;
+}
+
+.sous_categorie {
+	text-align:left;
+	text-align:left;
+	margin-top:-0px;
+	color:#a1a1a1;
+	font-weight:none;
+	width:140px;
+	margin-left:15px;
+}
+
+.sous_categorie a:visited{
+	color:#ff9191;
+}
+
+.page_number  {
+	color:#ffffff;
+}
+
+.page_number a:visited {
+	color: #ff9191;
+}
+
+.sous_categorie a:hover {
+	text-decoration:underlign;
+}
+
+.fleche_droite {
+	width:21px;
+	margin-left:30px;
+	margin-top:120px;
+	height:146px;
+	float:left;
+}
+
+.image_accueil {
+	float:left;
+	margin-left:65px;
+	margin-top:20px;
+}

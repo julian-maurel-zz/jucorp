@@ -1,0 +1,13 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<omusnt = 'http://www.omus.org/jahia/1.0'>
+<omusmix = 'http://www.omus.org/jahia/mix/1.0'>
+
+  [omusmix:omusComponents] > jmix:droppableContent mixin
+  
+  [omusnt:actu] > jnt:content, omusmix:omusComponents
+  	- titre (string)
+  	- corps (string, richtext)
+    - image (weakreference, picker[type=image])
+  
+  [omusnt:dernieresActu] > jnt:content, omusmix:omusComponents

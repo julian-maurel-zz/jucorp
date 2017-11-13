@@ -1,0 +1,22 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+[jmix:361degres] > jmix:droppableContent mixin
+
+[jmix:361Orderable] orderable mixin
+ extends = jnt:folder
+ itemtype = content
+
+[jnt:navMenu361] > jnt:content, jmix:structuredContent, jmix:studioOnly
+
+[jnt:pano] > jnt:content, mix:title, jmix:361degres
+ - image (weakreference, picker[type='image'])
+ - description (string)
+ - panoUrl (string)
+
+[jnt:galerie] > jnt:content, jmix:361degres orderable
+ - folder (weakreference, picker[type='folder']) < 'jnt:folder'
+ + * (jnt:fileReference)
+ + * (jnt:pano)
+
