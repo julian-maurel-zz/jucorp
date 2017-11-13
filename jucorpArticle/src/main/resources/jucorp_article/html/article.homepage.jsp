@@ -20,7 +20,7 @@
 
 <c:set value="${currentNode.properties.picture.node.url}" var="picture1URL" />
 
-<c:if test="${currentNode.properties.picture.node.thumbnailUrls['w500'] != ''}">
+<c:if test="${currentNode.properties.picture.node.thumbnailUrls['w500'] != null}">
     <c:set value="${currentNode.properties.picture.node.thumbnailUrls['w500']}" var="picture1URL" />
 </c:if>
 
