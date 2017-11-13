@@ -21,7 +21,7 @@
 		<div class="row">
 			<div class="row featurette">
 				<div class="col-md-5">
-                  <img class="featurette-image img-responsive" alt="500x500" data-src="holder.js/500x500/auto" src="<c:url value='${currentNode.properties.picture.node.thumbnailUrls[w500]}' />">
+                  <img class="featurette-image img-responsive" alt="500x500" data-src="holder.js/500x500/auto" src="<c:url value='${currentNode.properties.picture.node.url}' />">
 				</div>
 				<div class="col-md-7">
 					<h2 class="featurette-heading">
